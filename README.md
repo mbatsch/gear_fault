@@ -9,6 +9,6 @@ The repository contains some of the code used in the project aiming at designing
 
 <ul>
   <li><a href="https://github.com/mbatsch/gear_fault/blob/main/data_stats_and_visu.py">data_stats_and_visu.py</a> - data preprocessing, statistics and visualisation</li>
-  <li>train_test_model.py - model of autoencoder, training, testing and metrics</li>
+  <li><a href="https://github.com/mbatsch/gear_fault/blob/main/train_test_model.py">train_test_model.py</a> - model of autoencoder, training, testing and metrics</li>
 </ul>
 
