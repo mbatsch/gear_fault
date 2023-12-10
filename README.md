@@ -8,7 +8,7 @@ The repository contains some of the code used in the project aiming at designing
 <b>List of files</b>
 
 <ul>
-  <li>data_stats_and_visu.py - data preprocessing, statistics and visualisation</li>
+  <li><a href="https://github.com/mbatsch/gear_fault/blob/main/data_stats_and_visu.py">data_stats_and_visu.py</a> - data preprocessing, statistics and visualisation</li>
   <li>train_test_model.py - model of autoencoder, training, testing and metrics</li>
 </ul>
 
