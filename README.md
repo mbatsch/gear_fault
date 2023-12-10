@@ -1,7 +1,8 @@
-# gear_fault
+# Gear fault detection by unsupervised deep learning of autoencoder
 
-Repository contains some of the code used in project <a href="https://mbatsch.github.io/portfolio/autoencoder.html">Gear fault detection by unsupervised deep learning of autoencoder</a>
+The repository contains some of the code used in the project aiming at designing a method for gear fault detection based on its vibrational signal. More details can be found <a href="https://mbatsch.github.io/portfolio/autoencoder.html">here</a>.
 
 List of files:
+
 
 
