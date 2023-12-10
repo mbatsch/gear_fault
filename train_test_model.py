@@ -40,15 +40,15 @@ class FaultDetector(Model):
     def __init__(self):
         super(FaultDetector, self).__init__()
         self.encoder = tf.keras.Sequential([
-            layers.Dense(64, activation="relu"),  # 32
-            layers.Dense(32, activation="relu"),  # 16
-            layers.Dense(16, activation="relu")])  # 8
+            layers.Dense(64, activation="relu"), 
+            layers.Dense(32, activation="relu"),  
+            layers.Dense(16, activation="relu")]) 
 
         self.decoder = tf.keras.Sequential([
-            #layers.Dense(16, activation="relu"),  # nie bylo tej
-            layers.Dense(32, activation="relu"),  # 16
-            layers.Dense(64, activation="relu"),  # 32
-            layers.Dense(129, activation="sigmoid")])  # no of samples
+            #layers.Dense(16, activation="relu"), 
+            layers.Dense(32, activation="relu"), 
+            layers.Dense(64, activation="relu"),  
+            layers.Dense(129, activation="sigmoid")]) 
 
     def call(self, x):
         encoded = self.encoder(x)
@@ -62,8 +62,8 @@ autoencoder.compile(optimizer='adam', loss='mse')
 # Training on normal gearbox
 
 history = autoencoder.fit(train_data, train_data,
-                          epochs=15,  # 10
-                          batch_size=15,  # 20
+                          epochs=15, 
+                          batch_size=15,  
                           validation_data=(test_data, test_data),
                           shuffle=True)
 
