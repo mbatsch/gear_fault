@@ -81,7 +81,7 @@ def multi_hist(path1, path2):
 
 
 path_good = 'vibr/good/DRG.csv'
-path_fail = 'drgania/drg_fail/DRG_fail.csv'
+path_fail = 'vibr/fail/DRG_fail.csv'
 
 multi_hist(path_good, path_fail)
 
@@ -89,7 +89,7 @@ drg = pd.read_excel('vibr/good/drgania (1).xlsx', sheet_name=2, usecols='B', ski
 t = pd.read_excel('vibr/good/drgania (1).xlsx', sheet_name=2, usecols='A', skiprows=7)
 t = np.array(t)
 dt = np.diff(t, axis=0)
-# fp = 1 / dt[0]
+
 N = len(t)
 fp = N
 print('fp:', fp)
